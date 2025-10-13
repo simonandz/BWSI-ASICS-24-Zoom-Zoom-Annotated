@@ -1,0 +1,36 @@
+VCD info: dumpfile integration_test_tb.vcd opened for output.
+========================================
+Starting Integration Test
+========================================
+
+Test 1: Checking reset state
+  PASS: Outputs in expected reset state
+
+Test 2: UART RX in idle state
+  PASS: UART RX in idle state
+
+Test 3: RX line stability
+  PASS: RX line stable
+
+Test 4: Module responds to clock
+  PASS: Module running for 100 clock cycles
+
+Test 5: IO enable signals
+  PASS: IO pins in input mode as expected
+
+Test 6: Testing input signals
+  PASS: Input signals toggled successfully
+
+Test 7: Long running stability test
+  PASS: Module stable for 1000 clock cycles
+
+========================================
+Integration Test Complete
+========================================
+Total Tests: 7
+Passed:      7
+Failed:      0
+
+ALL TESTS PASSED!
+========================================
+integration_test_tb.v:157: $finish called at 11985000 (1ps)

@@ -1,0 +1,4 @@
+WARNING: x3q16alu_tb.v:43: $readmemb: The behaviour for reg[...] mem[N:0]; $readmemb("...", mem); changed in the 1364-2005 standard. To avoid ambiguity, use mem[0:N] or explicit range parameters $readmemb("...", mem, start, stop);. Defaulting to 1364-2005 behavior.
+WARNING: x3q16alu_tb.v:43: $readmemb(x3q16alu_tb.tv): Not enough words in the file for the requested range [0:100000].
+         7 tests completed with          0 errors
+x3q16alu_tb.v:81: $finish called at 95 (1s)

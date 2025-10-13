@@ -1,0 +1,1545 @@
+$date
+	Mon Oct 13 11:23:19 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module functional_cpu_keccak_tb $end
+$var wire 1 ! tx $end
+$var wire 1 " set_rx_speed $end
+$var wire 13 # rx_speed [12:0] $end
+$var wire 1 $ request_type $end
+$var wire 16 % request_address [15:0] $end
+$var wire 1 & request $end
+$var wire 16 ' data_out [15:0] $end
+$var reg 1 ( clk $end
+$var reg 16 ) last_address [15:0] $end
+$var reg 16 * memory_in [15:0] $end
+$var reg 1 + memory_ready $end
+$var reg 1 , request_pending $end
+$var reg 1 - reset $end
+$var reg 1 . uart_inbound $end
+$var reg 1 / write_complete $end
+$var integer 32 0 cycle_count [31:0] $end
+$var integer 32 1 i [31:0] $end
+$var integer 32 2 instruction_count [31:0] $end
+$scope module cpu $end
+$var wire 1 ( clk $end
+$var wire 16 3 memory_in [15:0] $end
+$var wire 1 + memory_ready $end
+$var wire 1 - reset $end
+$var wire 13 4 rx_speed [12:0] $end
+$var wire 1 " set_rx_speed $end
+$var wire 1 . uart_inbound $end
+$var wire 1 / write_complete $end
+$var wire 1 5 uart_busy $end
+$var wire 1 ! tx $end
+$var wire 3 6 settings [2:0] $end
+$var wire 3 7 reg_out [2:0] $end
+$var wire 3 8 reg2 [2:0] $end
+$var wire 3 9 reg1 [2:0] $end
+$var wire 4 : opcode [3:0] $end
+$var wire 2 ; ksettings [1:0] $end
+$var wire 2 < kreg1_extended [1:0] $end
+$var wire 5 = kreg1 [4:0] $end
+$var wire 64 > keccak_output [63:0] $end
+$var wire 9 ? imm_upper [8:0] $end
+$var wire 8 @ imm_lower [7:0] $end
+$var wire 1 A gaF $end
+$var wire 1 B eF $end
+$var wire 16 C alu_result [15:0] $end
+$var reg 16 D alu_a [15:0] $end
+$var reg 16 E alu_b [15:0] $end
+$var reg 3 F alu_mode [2:0] $end
+$var reg 16 G current_address [15:0] $end
+$var reg 16 H current_instruction [15:0] $end
+$var reg 16 I data_out [15:0] $end
+$var reg 3 J execution_stage [2:0] $end
+$var reg 1 K jump_con $end
+$var reg 320 L keccak_registers [319:0] $end
+$var reg 1 & request $end
+$var reg 16 M request_address [15:0] $end
+$var reg 1 $ request_type $end
+$var reg 13 N uart_data [12:0] $end
+$var reg 1 O uart_send $end
+$var reg 1 P uart_set $end
+$var integer 32 Q i [31:0] $end
+$scope module ALU $end
+$var wire 16 R a [15:0] $end
+$var wire 16 S b [15:0] $end
+$var wire 3 T mode [2:0] $end
+$var wire 16 U sum [15:0] $end
+$var wire 16 V sub [15:0] $end
+$var wire 8 W mult_b [7:0] $end
+$var wire 8 X mult_a [7:0] $end
+$var wire 9 Y mult [8:0] $end
+$var reg 1 B equal_flag $end
+$var reg 1 A greater_a_flag $end
+$var reg 16 Z result [15:0] $end
+$upscope $end
+$scope module keccak_alu $end
+$var wire 2 [ mode [1:0] $end
+$var wire 320 \ registers [319:0] $end
+$var reg 64 ] keccak_output [63:0] $end
+$scope function ROL $end
+$var reg 64 ^ a [63:0] $end
+$var reg 64 _ offset [63:0] $end
+$upscope $end
+$upscope $end
+$scope module uart $end
+$var wire 1 ( clk $end
+$var wire 13 ` data [12:0] $end
+$var wire 1 - reset $end
+$var wire 1 O send $end
+$var wire 1 P set $end
+$var parameter 13 a UART_SPEED_DEFAULT $end
+$var reg 3 b bit_counter [2:0] $end
+$var reg 1 5 busy $end
+$var reg 13 c cycle_counter [12:0] $end
+$var reg 13 d cycles_per_bit [12:0] $end
+$var reg 8 e data_sending [7:0] $end
+$var reg 2 f stage [1:0] $end
+$var reg 1 ! tx_reg $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 g \registers[0] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 h \registers[1] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 i \registers[2] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 j \registers[3] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 k \registers[4] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 l \registers[5] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 m \registers[6] [15:0] $end
+$upscope $end
+$upscope $end
+$scope module functional_cpu_keccak_tb $end
+$scope module cpu $end
+$var reg 16 n \registers[7] [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1100001101010 a
+$end
+#0
+$dumpvars
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b0 f
+b0 e
+b1100001101010 d
+b0 c
+b0 b
+b0 `
+bx _
+bx ^
+b0 ]
+b0 \
+b0 [
+b0 Z
+b0 Y
+b0 X
+b0 W
+b0 V
+b0 U
+b0 T
+b0 S
+b0 R
+b1000 Q
+0P
+0O
+b0 N
+b0 M
+b0 L
+0K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+1B
+0A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+05
+b0 4
+bx 3
+b0 2
+b10000000000000000 1
+b0 0
+x/
+0.
+1-
+x,
+x+
+bx *
+b1111111111111111 )
+0(
+b0 '
+1&
+b0 %
+0$
+b0 #
+0"
+1!
+$end
+#5000
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+0,
+0/
+0+
+b1000 Q
+1(
+#10000
+0(
+#15000
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b1000 Q
+1(
+#20000
+0(
+0-
+#25000
+0&
+b0 g
+1,
+b1 0
+1(
+#30000
+0(
+#35000
+b0 g
+0,
+1+
+b1010100111 *
+b1010100111 3
+b10 0
+1(
+#40000
+0(
+#45000
+0B
+b1111111111111111 V
+b1 C
+b1 Z
+b1 W
+b111 :
+b10 6
+b101 9
+b10 @
+b101 ?
+b101 =
+b101 J
+b1 U
+b1 E
+b1 S
+b1010100111 H
+b0 g
+b10 h
+0+
+b0 )
+b1 2
+b11 0
+1(
+#50000
+0(
+#55000
+b1 J
+b1 %
+b1 M
+b0 g
+b100 0
+1(
+#60000
+0(
+#65000
+b100 J
+b1010000000 i
+b0 g
+b101 0
+1(
+#70000
+0(
+#75000
+1&
+b0 J
+b0 g
+b110 0
+1(
+#80000
+0(
+#85000
+0&
+b0 g
+1,
+b111 0
+1(
+#90000
+0(
+#95000
+b0 g
+0,
+1+
+b110110111 *
+b110110111 3
+b1000 0
+1(
+#100000
+0(
+#105000
+1B
+b10 C
+b10 Z
+b1 Y
+b1 X
+b11 6
+b11 9
+b1 @
+b11 ?
+b11 =
+b101 J
+b10 U
+b0 V
+b1 D
+b1 R
+b1 G
+b110110111 H
+b0 g
+b10 h
+0+
+b1 )
+b10 2
+b1001 0
+1(
+#110000
+0(
+#115000
+b1 J
+b10 %
+b10 M
+b0 g
+b1010 0
+1(
+#120000
+0(
+#125000
+b100 J
+b110000000 j
+b0 g
+b1011 0
+1(
+#130000
+0(
+#135000
+1&
+b0 J
+b0 g
+b1100 0
+1(
+#140000
+0(
+#145000
+0&
+b0 g
+1,
+b1101 0
+1(
+#150000
+0(
+#155000
+b0 g
+0,
+1+
+b1000110100000001 *
+b1000110100000001 3
+b1110 0
+1(
+#160000
+0(
+#165000
+b0 ^
+b0 _
+1A
+0B
+b11 C
+b11 Z
+b10 Y
+b10 X
+b1 :
+b0 6
+b10 9
+b11 8
+b100 7
+b10001101 @
+b100011010 ?
+b11010 =
+b10 ;
+b10 [
+b101 J
+b11 U
+b1 V
+b10 D
+b10 R
+b10 G
+b1000110100000001 H
+b0 g
+b10 h
+0+
+b10 )
+b11 2
+b1111 0
+1(
+#170000
+0(
+#175000
+b1 J
+b11 %
+b11 M
+b0 g
+b10000 0
+1(
+#180000
+0(
+#185000
+b10000000 W
+b10000000000 C
+b10000000000 Z
+b0 Y
+b10000000 X
+b10 J
+b110000000 E
+b110000000 S
+b10000000000 U
+b100000000 V
+b1010000000 D
+b1010000000 R
+b0 g
+b10001 0
+1(
+#190000
+0(
+#195000
+b100 J
+b110 h
+b10000000000 k
+b0 g
+b10010 0
+1(
+#200000
+0(
+#205000
+1&
+b0 J
+b0 g
+b10011 0
+1(
+#210000
+0(
+#215000
+0&
+b0 g
+1,
+b10100 0
+1(
+#220000
+0(
+#225000
+b0 g
+0,
+1+
+b1010110100010001 *
+b1010110100010001 3
+b10101 0
+1(
+#230000
+0(
+#235000
+b1 W
+1A
+b100 C
+b100 Z
+b11 Y
+b11 X
+b1 6
+b101 7
+b10101101 @
+b101011010 ?
+b10 <
+b101 J
+b1 E
+b1 S
+b100 U
+b10 V
+b11 D
+b11 R
+b11 G
+b1010110100010001 H
+b0 g
+b110 h
+b11 )
+b100 2
+0+
+b10110 0
+1(
+#240000
+0(
+#245000
+b1 J
+b100 %
+b100 M
+b0 g
+b10111 0
+1(
+#250000
+0(
+#255000
+b10000000 W
+b0 Y
+b10000000 X
+b100000000 C
+b100000000 Z
+b10 J
+b110000000 E
+b110000000 S
+b10000000000 U
+b100000000 V
+b1010000000 D
+b1010000000 R
+b1 F
+b1 T
+b0 g
+b11000 0
+1(
+#260000
+0(
+#265000
+b100 J
+b110 h
+b100000000 l
+b0 g
+b11001 0
+1(
+#270000
+0(
+#275000
+b10000000000 C
+b10000000000 Z
+b0 F
+b0 T
+1&
+b0 J
+b0 g
+b11010 0
+1(
+#280000
+0(
+#285000
+0&
+b0 g
+1,
+b11011 0
+1(
+#290000
+0(
+#295000
+b0 g
+0,
+1+
+b1100110100100001 *
+b1100110100100001 3
+b11100 0
+1(
+#300000
+0(
+#305000
+b100 Y
+b1 W
+1A
+b101 C
+b101 Z
+b100 X
+b10 6
+b110 7
+b11001101 @
+b110011010 ?
+b0 <
+b11 ;
+b11 [
+b101 J
+b1 E
+b1 S
+b101 U
+b11 V
+b100 D
+b100 R
+b100 G
+b1100110100100001 H
+b0 g
+b110 h
+0+
+b100 )
+b101 2
+b11101 0
+1(
+#310000
+0(
+#315000
+b1 J
+b101 %
+b101 M
+b0 g
+b11110 0
+1(
+#320000
+0(
+#325000
+b10000000 W
+b0 Y
+b10000000 X
+b0 C
+b0 Z
+b10 J
+b110000000 E
+b110000000 S
+b10000000000 U
+b100000000 V
+b1010000000 D
+b1010000000 R
+b10 F
+b10 T
+b0 g
+b11111 0
+1(
+#330000
+0(
+#335000
+b100 J
+b10110 h
+b0 m
+b0 g
+b100000 0
+1(
+#340000
+0(
+#345000
+b10000000000 C
+b10000000000 Z
+b0 F
+b0 T
+1&
+b0 J
+b0 g
+b100001 0
+1(
+#350000
+0(
+#355000
+0&
+b0 g
+1,
+b100010 0
+1(
+#360000
+0(
+#365000
+b0 g
+0,
+1+
+b1110110100110001 *
+b1110110100110001 3
+b100011 0
+1(
+#370000
+0(
+#375000
+b1 W
+1A
+b110 C
+b110 Z
+b101 Y
+b101 X
+b11 6
+b111 7
+b11101101 @
+b111011010 ?
+b10 <
+b101 J
+b1 E
+b1 S
+b110 U
+b100 V
+b101 D
+b101 R
+b101 G
+b1110110100110001 H
+b0 g
+b10110 h
+b101 )
+b110 2
+0+
+b100100 0
+1(
+#380000
+0(
+#385000
+b1 J
+b110 %
+b110 M
+b0 g
+b100101 0
+1(
+#390000
+0(
+#395000
+b10000000 W
+b0 Y
+b10000000 X
+b1111111101111111 C
+b1111111101111111 Z
+b10 J
+b110000000 E
+b110000000 S
+b10000000000 U
+b100000000 V
+b1010000000 D
+b1010000000 R
+b11 F
+b11 T
+b0 g
+b100110 0
+1(
+#400000
+0(
+#405000
+b100 J
+b110 h
+b1111111101111111 n
+b0 g
+b100111 0
+1(
+#410000
+0(
+#415000
+b10000000000 C
+b10000000000 Z
+b0 F
+b0 T
+1&
+b0 J
+b0 g
+b101000 0
+1(
+#420000
+0(
+#425000
+0&
+b0 g
+1,
+b101001 0
+1(
+#430000
+0(
+#435000
+b0 g
+0,
+1+
+b100000100111 *
+b100000100111 3
+b101010 0
+1(
+#440000
+0(
+#445000
+b1 W
+1A
+b111 C
+b111 Z
+b110 Y
+b110 X
+b111 :
+b10 6
+b0 9
+b10 8
+b0 7
+b1000 @
+b10000 ?
+b10000 =
+b0 <
+b0 ;
+b0 [
+b101 J
+b1 E
+b1 S
+b111 U
+b101 V
+b110 D
+b110 R
+b110 G
+b100000100111 H
+b0 g
+b110 h
+0+
+b110 )
+b111 2
+b101011 0
+1(
+#450000
+0(
+#455000
+b1 J
+b111 %
+b111 M
+b0 g
+b101100 0
+1(
+#460000
+0(
+#465000
+b100 J
+b100000000000 i
+b0 g
+b101101 0
+1(
+#470000
+0(
+#475000
+1&
+b0 J
+b0 g
+b101110 0
+1(
+#480000
+0(
+#485000
+0&
+b0 g
+1,
+b101111 0
+1(
+#490000
+0(
+#495000
+b0 g
+0,
+1+
+b1111111110110111 *
+b1111111110110111 3
+b110000 0
+1(
+#500000
+0(
+#505000
+b1000 C
+b1000 Z
+b111 Y
+b111 X
+b11 6
+b111 9
+b111 8
+b111 7
+b11111111 @
+b111111111 ?
+b11111 =
+b11 <
+b11 ;
+b11 [
+b101 J
+b1000 U
+b110 V
+b111 D
+b111 R
+b111 G
+b1111111110110111 H
+b0 g
+b110 h
+0+
+b111 )
+b1000 2
+b110001 0
+1(
+#510000
+0(
+#515000
+b1 J
+b1000 %
+b1000 M
+b0 g
+b110010 0
+1(
+#520000
+0(
+#525000
+b100 J
+b1111111110000000 j
+b0 g
+b110011 0
+1(
+#530000
+0(
+#535000
+1&
+b0 J
+b0 g
+b110100 0
+1(
+#540000
+0(
+#545000
+0&
+b0 g
+1,
+b110101 0
+1(
+#550000
+0(
+#555000
+b0 g
+0,
+1+
+b110100010110 *
+b110100010110 3
+b110110 0
+1(
+#560000
+0(
+#565000
+b1001 C
+b1001 Z
+b1000 Y
+b1000 X
+b110 :
+b1 6
+b10 9
+b11 8
+b0 7
+b1101 @
+b11010 ?
+b11010 =
+b0 <
+b0 ;
+b0 [
+b101 J
+b1001 U
+b111 V
+b1000 D
+b1000 R
+b1000 G
+b110100010110 H
+b0 g
+b110 h
+0+
+b1000 )
+b1001 2
+b110111 0
+1(
+#570000
+0(
+#575000
+b1 J
+b1001 %
+b1001 M
+b0 g
+b111000 0
+1(
+#580000
+0(
+#585000
+b10 J
+1&
+1$
+b100000000000 %
+b100000000000 M
+b1111111110000000 '
+b1111111110000000 I
+b0 g
+b111001 0
+1(
+#590000
+0(
+#595000
+0&
+b0 g
+1,
+b111010 0
+1(
+#600000
+0(
+#605000
+b0 g
+0,
+1/
+b111011 0
+1(
+#610000
+0(
+#615000
+b100 J
+b1001 %
+b1001 M
+b0 g
+0/
+b111100 0
+1(
+#620000
+0(
+#625000
+b0 '
+b0 I
+1&
+0$
+b0 J
+b0 g
+b111101 0
+1(
+#630000
+0(
+#635000
+0&
+b0 g
+1,
+b111110 0
+1(
+#640000
+0(
+#645000
+b0 g
+0,
+1+
+b1000000100010101 *
+b1000000100010101 3
+b111111 0
+1(
+#650000
+0(
+#655000
+b1010 C
+b1010 Z
+b1001 Y
+b1001 X
+b101 :
+b0 8
+b100 7
+b10000001 @
+b100000010 ?
+b10 =
+b10 ;
+b10 [
+b101 J
+b1010 U
+b1000 V
+b1001 D
+b1001 R
+b1001 G
+b1000000100010101 H
+b0 g
+b110 h
+b1001 )
+b1010 2
+0+
+b1000000 0
+1(
+#660000
+0(
+#665000
+b1 J
+b1010 %
+b1010 M
+b0 g
+b1000001 0
+1(
+#670000
+0(
+#675000
+b10 J
+1&
+b100000000000 %
+b100000000000 M
+b0 g
+b1000010 0
+1(
+#680000
+0(
+#685000
+0&
+b0 g
+1,
+b1000011 0
+1(
+#690000
+0(
+#695000
+b0 g
+0,
+1+
+b1111111110000000 *
+b1111111110000000 3
+b1000100 0
+1(
+#700000
+0(
+#705000
+b100 J
+b1010 %
+b1010 M
+b1111111110000000 k
+b0 g
+b110 h
+0+
+b100000000000 )
+b1011 2
+b1000101 0
+1(
+#710000
+0(
+#715000
+1&
+b0 J
+b0 g
+b1000110 0
+1(
+#720000
+0(
+#725000
+0&
+b0 g
+1,
+b1000111 0
+1(
+#730000
+0(
+#735000
+b0 g
+0,
+1+
+b1100000000000011 *
+b1100000000000011 3
+b1001000 0
+1(
+#740000
+0(
+#745000
+b1011 C
+b1011 Z
+b1010 Y
+b1010 X
+b11 :
+b0 6
+b0 9
+b110 7
+b11000000 @
+b110000000 ?
+b0 =
+b11 ;
+b11 [
+b101 J
+b1011 U
+b1001 V
+b1010 D
+b1010 R
+b1010 G
+b1100000000000011 H
+b0 g
+b110 h
+0+
+b1010 )
+b1100 2
+b1001001 0
+1(
+#750000
+0(
+#755000
+b1 J
+b1011 %
+b1011 M
+b0 g
+b1001010 0
+1(
+#760000
+0(
+#765000
+b100 J
+b0 g
+b1001011 0
+1(
+#770000
+0(
+#775000
+1&
+b0 J
+b0 g
+b1001100 0
+1(
+#780000
+0(
+#785000
+0&
+b0 g
+1,
+b1001101 0
+1(
+#790000
+0(
+#795000
+b0 g
+0,
+1+
+b101100100 *
+b101100100 3
+b1001110 0
+1(
+#800000
+0(
+#805000
+b1100 C
+b1100 Z
+b1011 Y
+b1011 X
+b100 :
+b110 6
+b10 9
+b0 7
+b1 @
+b10 ?
+b10 =
+b0 ;
+b0 [
+b101 J
+b1100 U
+b1010 V
+b1011 D
+b1011 R
+b1011 G
+b101100100 H
+b0 g
+b110 h
+0+
+b1011 )
+b1101 2
+b1001111 0
+1(
+#810000
+0(
+#815000
+b1 J
+b1100 %
+b1100 M
+b0 g
+b1010000 0
+1(
+#820000
+0(
+#825000
+b10 J
+1&
+b0 g
+b1010001 0
+1(
+#830000
+0(
+#835000
+0&
+b0 g
+1,
+b1010010 0
+1(
+#840000
+0(
+#845000
+b0 g
+0,
+1+
+b1111111111111111 *
+b1111111111111111 3
+b1010011 0
+1(
+#850000
+0(
+#855000
+b100 J
+b1111111111111111 %
+b1111111111111111 M
+b0 g
+b110 h
+b1100 )
+b1110 2
+0+
+b1010100 0
+1(
+#860000
+0(
+#865000
+1&
+b0 J
+b0 g
+b1010101 0
+1(
+#870000
+0(
+#875000
+0&
+b0 g
+1,
+1(
+#880000
+0(
+#885000
+b0 g
+0,
+1+
+b0 *
+b0 3
+1(
+#890000
+0(
+#895000
+0A
+b0 C
+b0 Z
+b11111111 Y
+b11111111 X
+b0 :
+b0 6
+b0 9
+b0 @
+b0 ?
+b0 =
+b101 J
+b0 U
+b1111111111111110 V
+b1111111111111111 D
+b1111111111111111 R
+b1111111111111111 G
+b0 H
+b0 g
+b110 h
+b1111111111111111 )
+b1111 2
+0+
+1(
+#900000
+0(
+#905000
+b1 J
+b0 %
+b0 M
+b0 g
+1(
+#910000
+0(
+#915000
+b100 J
+b0 g
+1(
+#920000
+0(
+#925000
+1&
+b0 J
+b0 g
+1(
+#930000
+0(
+#935000
+0&
+b0 g
+1,
+1(
+#940000
+0(
+#945000
+b0 g
+0,
+1+
+b1010100111 *
+b1010100111 3
+1(
+#950000
+0(
+#955000
+b1 C
+b1 Z
+b0 Y
+b0 X
+b111 :
+b10 6
+b101 9
+b10 @
+b101 ?
+b101 =
+b101 J
+b1 U
+b1111111111111111 V
+b0 D
+b0 R
+b0 G
+b1010100111 H
+b0 g
+b110 h
+b0 )
+b10000 2
+0+
+1(
+#960000
+0(
+#965000
+b1 J
+b1 %
+b1 M
+b0 g
+1(
+#970000
+0(
+#975000
+b100 J
+b1010000000 i
+b0 g
+1(
+#980000
+0(
+#985000
+1&
+b0 J
+b0 g
+1(
+#990000
+0(
+#995000
+0&
+b0 g
+1,
+1(
+#1000000
+0(
+#1005000
+b0 g
+0,
+1+
+b110110111 *
+b110110111 3
+1(
+#1010000
+0(
+#1015000
+1B
+b10 C
+b10 Z
+b1 Y
+b1 X
+b11 6
+b11 9
+b1 @
+b11 ?
+b11 =
+b101 J
+b10 U
+b0 V
+b1 D
+b1 R
+b1 G
+b110110111 H
+b0 g
+b110 h
+b1 )
+b10001 2
+0+
+1(
+#1020000
+0(
+#1025000
+b1 J
+b10 %
+b10 M
+b0 g
+1(
+#1030000
+0(
+#1035000
+b100 J
+b110000000 j
+b0 g
+1(
+#1040000
+0(
+#1045000
+1&
+b0 J
+b0 g
+1(
+#1050000
+0(
+#1055000
+0&
+b0 g
+1,
+1(
+#1060000
+0(
+#1065000
+b0 g
+0,
+1+
+b1000110100000001 *
+b1000110100000001 3
+1(

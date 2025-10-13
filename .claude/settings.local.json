@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where iverilog)",
+      "Bash(iverilog:*)",
+      "Bash(dir:*)",
+      "Bash(vvp:*)",
+      "Bash(chmod:*)",
+      "Bash(bash:*)",
+      "Bash(cmd /c:*)",
+      "Bash(tee:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

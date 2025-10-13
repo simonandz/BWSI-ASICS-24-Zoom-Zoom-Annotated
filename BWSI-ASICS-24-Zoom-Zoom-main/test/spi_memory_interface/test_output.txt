@@ -1,0 +1,3 @@
+WARNING: spi_memory_interface_tb.v:48: $readmemb(spi_memory_interface_tb.tv): Not enough words in the file for the requested range [0:65536].
+VCD info: dumpfile spi_memory_interface_tb.vcd opened for output.
+spi_memory_interface_tb.v:89: $finish called at 655360 (1s)

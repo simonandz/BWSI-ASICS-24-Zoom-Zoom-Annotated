@@ -1,0 +1,33 @@
+# Icarus Verilog build artifacts
+*.vvp
+*.out
+
+# Waveform files (keep proof waveforms, ignore others)
+*.vcd
+!test/functional_cpu_keccak_tb.vcd
+!test/keccak_functional_tb.vcd
+!test/integration_test_tb.vcd
+
+# Log files
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak

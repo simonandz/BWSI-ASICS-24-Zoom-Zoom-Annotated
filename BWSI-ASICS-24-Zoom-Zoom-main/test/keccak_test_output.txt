@@ -1,0 +1,396 @@
+VCD info: dumpfile keccak_functional_tb.vcd opened for output.
+VCD warning: skipping signal keccak_functional_tb.cpu.keccak_registers, it was previously included.
+VCD warning: skipping signal keccak_functional_tb.cpu.keccak_output, it was previously included.
+VCD warning: skipping signal keccak_functional_tb.cpu.execution_stage, it was previously included.
+VCD warning: skipping signal keccak_functional_tb.cpu.current_instruction, it was previously included.
+VCD warning: skipping signal keccak_functional_tb.cpu.current_address, it was previously included.
+VCD warning: array word keccak_functional_tb.cpu.registers[2] will conflict with an escaped identifier.
+VCD warning: array word keccak_functional_tb.cpu.registers[3] will conflict with an escaped identifier.
+VCD warning: array word keccak_functional_tb.cpu.registers[4] will conflict with an escaped identifier.
+
+========================================
+Keccak Accelerator Functional Test
+========================================
+
+Test started at time 20000
+
+Current Instr: 0001000000100111
+Current Addr: 0000
+R0: 0000
+R1: 0002
+R2: 1000
+R3: 0000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0010000000110111
+Current Addr: 0001
+R0: 0000
+R1: 0002
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0000000000101001
+Current Addr: 0002
+R0: 0000
+R1: 0002
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 0003
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0001000000101001
+Current Addr: 0004
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 0005
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0010000000101001
+Current Addr: 0006
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 0007
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0011000000101001
+Current Addr: 0008
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 0009
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0000000010101001
+Current Addr: 000a
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 000b
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+=== Phase 1: After initial Keccak loads ===
+K0[63:0] = 0xaaaaaaaaaaaaaaaa
+K1[63:0] = 0x000000000000aaaa
+Current Instr: 0001000010101001
+Current Addr: 000c
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 000d
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0010000010101001
+Current Addr: 000e
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100000100000010
+Current Addr: 000f
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0011000010101001
+Current Addr: 0010
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 1100000000000011
+Current Addr: 0011
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0100001000111001
+Current Addr: 0012
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 0000
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0110000110000010
+Current Addr: 0013
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0101001000111001
+Current Addr: 0014
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0110000110000010
+Current Addr: 0015
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0110001000111001
+Current Addr: 0016
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0110000110000010
+Current Addr: 0017
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0111001000111001
+Current Addr: 0018
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+
+========================================
+Program Complete - Final Results
+========================================
+Current Instr: 0000000101100100
+Current Addr: 0019
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0000000000000000
+Current Addr: ffff
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0001000000100111
+Current Addr: 0000
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+Current Instr: 0010000000110111
+Current Addr: 0001
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+
+=== Final Keccak Register State ===
+K0[63:0]   = 0xaaaaaaaaaaaaaaaa
+K1[63:0]   = 0xaaaaaaaaaaaaaaaa
+K2[63:0]   = 0x0000000000000000
+K3[63:0]   = 0x0000000000000000
+K4[63:0]   = 0x0000000000000000 (XOR result)
+
+=== Memory Results ===
+Input data at 0x1000-0x1007:
+  [0x1000] = 0xaaaa
+  [0x1001] = 0xbbbb
+  [0x1002] = 0x5555
+  [0x1003] = 0xff00
+  [0x1004] = 0x00ff
+  [0x1005] = 0x1234
+  [0x1006] = 0x5678
+  [0x1007] = 0x9abc
+
+Output data at 0x2000-0x2003:
+  [0x2000] = 0x0000
+  [0x2001] = 0x0000
+  [0x2002] = 0x0000
+  [0x2003] = 0x0000
+
+=== Verification ===
+Expected K0 XOR K1 in K4:
+  K0[15:0] ^ K1[15:0] = 0xAAAA ^ 0x00FF = 0xaa55
+  K0 input: 0xff005555bbbbaaaa
+  K1 input: 0x9abc5678123400ff
+
+=== CPU Register State ===
+R2 = 0x1000
+R3 = 0x2000
+
+Total cycles: 205
+
+========================================
+KECCAK TEST COMPLETED
+Waveform saved to: keccak_functional_tb.vcd
+========================================
+
+Current Instr: 0000000000101001
+Current Addr: 0002
+R0: 0000
+R1: 0006
+R2: 1000
+R3: 2000
+R4: 1061
+R5: 0000
+R6: 0000
+R7: 0000
+---------------------------------
+keccak_functional_tb.v:316: $finish called at 2365000 (1ps)

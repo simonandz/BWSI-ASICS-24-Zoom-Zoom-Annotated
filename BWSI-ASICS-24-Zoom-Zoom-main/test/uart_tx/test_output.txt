@@ -1,0 +1,4 @@
+WARNING: uart_tx_tb.v:47: $readmemb(uart_tx_tb.tv): Not enough words in the file for the requested range [0:65536].
+VCD info: dumpfile uart_tx_tb.vcd opened for output.
+        31 tests completed with          0 errors
+uart_tx_tb.v:99: $finish called at 336 (1s)
